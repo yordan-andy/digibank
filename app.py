@@ -76,8 +76,7 @@ class BankApp(Resource):
                 self.__driver.switch_to.frame(
                     self.__driver.find_element_by_name("user_area"))
                 self.__driver.switch_to.default_content()
-                self.logout()
-                return {"message": "Login sukses"}
+                return self.cekSaldo()
             except:
                 alert = self.__driver.switch_to.alert()
                 # return alert.text
@@ -90,22 +89,15 @@ class BankApp(Resource):
     def cekSaldo(self):
         try:
             self.__driver.switch_to.frame(
-                self.__driver.find_element_by_xpath("//frame[@name=\"menu\"]"))
-            mutasi = self.__driver.wait.until(EC.presence_of_element_located(
-                (By.XPATH, "//a[@href=\"account_information_menu.htm\"]")))
-            mutasi.click()
-            cek_saldo = self.__driver.wait.until(EC.presence_of_element_located(
-                (By.XPATH, "//a[@onclick=\"javascript:goToPage('balanceinquiry.do');return false;\"]")))
-            cek_saldo.click()
-            self.__driver.switch_to.default_content()
+                self.__driver.find_element_by_name("user_area"))
             self.__driver.switch_to.frame(
-                self.__driver.find_element_by_xpath("//frame[@name=\"atm\"]"))
+                self.__driver.find_element_by_name("iframe1"))
+
             saldo = self.__driver.find_element_by_xpath(
-                "//table[3]/tbody//tr[2]//td[4]").text
-            # print(("Saldo BCA saat ini adalah %s" % saldo))
+                "//*[contains(text(), \"S$\")]").text
             self.__driver.switch_to.default_content()
             self.logout()
-            return {"message": "Saldo BCA saat ini adalah %s" % saldo}
+            return {"message": "Saldo DBS saat ini adalah %s" % saldo}
         except TimeoutException:
             return {"message": "Session timeout. please login again"}
 
