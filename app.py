@@ -47,10 +47,10 @@ class klikDBS(Resource):
 
     def login(self):
         opts = webdriver.ChromeOptions()
-        opts.headless = True
+        opts.headless = False
         self.__driver = webdriver.Chrome(
             ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install(), options=opts)
-        self.__driver.wait = WebDriverWait(self.__driver, 3)
+        self.__driver.wait = WebDriverWait(self.__driver, 5)
         self.__driver.get(self.__url)
 
         username = self.__driver.wait.until(
@@ -69,8 +69,12 @@ class klikDBS(Resource):
         self.__driver.switch_to.frame(
             self.__driver.find_element_by_name("iframe1"))
 
-        saldo = self.__driver.find_element_by_xpath(
-            "//*[contains(text(), \"S$\")]").text
+        # saldo = self.__driver.find_element_by_xpath(
+        #    "//*[contains(text(), \"S$\")]").text
+
+        saldo = self.__driver.wait.until(EC.visibility_of_element_located(
+            (By.XPATH, "//*[contains(text(), \"S$\")]"))).text
+
         self.__driver.switch_to.default_content()
         self.logout()
         return {"message": "Saldo DBS saat ini adalah %s" % saldo}
