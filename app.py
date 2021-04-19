@@ -47,7 +47,10 @@ class klikDBS(Resource):
 
     def login(self):
         opts = webdriver.ChromeOptions()
-        opts.headless = False
+        #opts.headless = False
+        opts.add_argument('--headless')
+        opts.add_argument('--disable-gpu')
+        opts.add_argument('--no-sandbox')
         self.__driver = webdriver.Chrome(
             ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install(), options=opts)
         self.__driver.wait = WebDriverWait(self.__driver, 5)
@@ -64,16 +67,14 @@ class klikDBS(Resource):
         password.send_keys(self.__password)
         login.send_keys(webdriver.common.keys.Keys.SPACE)
 
-        self.__driver.switch_to.frame(
-            self.__driver.find_element_by_name("user_area"))
-        self.__driver.switch_to.frame(
-            self.__driver.find_element_by_name("iframe1"))
+        self.__driver.wait.until(
+            EC.frame_to_be_available_and_switch_to_it((By.NAME, "user_area")))
+        self.__driver.wait.until(
+            EC.frame_to_be_available_and_switch_to_it((By.NAME, "iframe1")))
 
-        # saldo = self.__driver.find_element_by_xpath(
-        #    "//*[contains(text(), \"S$\")]").text
-
-        saldo = self.__driver.wait.until(EC.visibility_of_element_located(
-            (By.XPATH, "//*[contains(text(), \"S$\")]"))).text
+        self.__driver.wait = WebDriverWait(self.__driver, 30)
+        saldo = self.__driver.wait.until(
+            EC.presence_of_element_located((By.XPATH, "//*[@id=\"notification\"]/ul/li[2]/div[2]/table/tbody/tr/td[2]/span"))).text
 
         self.__driver.switch_to.default_content()
         self.logout()
@@ -81,11 +82,13 @@ class klikDBS(Resource):
 
     def logout(self):
         try:
-            self.__driver.switch_to.frame(
-                self.__driver.find_element_by_name("user_area"))
+            self.__driver.wait = WebDriverWait(self.__driver, 30)
+            self.__driver.wait.until(
+                EC.frame_to_be_available_and_switch_to_it((By.NAME, "user_area")))
             logout = self.__driver.wait.until(EC.presence_of_element_located(
                 (By.XPATH, "//a[contains(@href, \"LogOutUser\")]")))
-            logout.click()
+            logout.send_keys("\n")
+            # logout.send_keys(webdriver.common.keys.Keys.SPACE)
             print("Anda berhasil logout")
         except TimeoutException:
             print("Session timeout. please login again")
