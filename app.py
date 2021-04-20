@@ -54,7 +54,7 @@ class klikDBS(Resource):
         opts.add_argument('--disable-dev-shm-usage')
         self.__driver = webdriver.Chrome(
             ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install(), options=opts)
-        self.__driver.wait = WebDriverWait(self.__driver, 5)
+        self.__driver.wait = WebDriverWait(self.__driver, 2)
         self.__driver.get(self.__url)
 
         username = self.__driver.wait.until(
@@ -68,14 +68,15 @@ class klikDBS(Resource):
         password.send_keys(self.__password)
         login.send_keys(webdriver.common.keys.Keys.SPACE)
 
-        self.__driver.wait.until(
-            EC.frame_to_be_available_and_switch_to_it((By.NAME, "user_area")))
-        self.__driver.wait.until(
-            EC.frame_to_be_available_and_switch_to_it((By.NAME, "iframe1")))
+        saldo = ""
+        while not saldo:
+            self.__driver.wait.until(
+                EC.frame_to_be_available_and_switch_to_it((By.NAME, "user_area")))
+            self.__driver.wait.until(
+                EC.frame_to_be_available_and_switch_to_it((By.NAME, "iframe1")))
 
-        self.__driver.wait = WebDriverWait(self.__driver, 30)
-        saldo = self.__driver.wait.until(
-            EC.presence_of_element_located((By.XPATH, "//*[@id=\"notification\"]/ul/li[2]/div[2]/table/tbody/tr/td[2]/span"))).text
+            saldo = self.__driver.wait.until(
+                EC.presence_of_element_located((By.XPATH, "//*[@id=\"notification\"]/ul/li[2]/div[2]/table/tbody/tr/td[2]/span"))).text
 
         self.__driver.switch_to.default_content()
         self.logout()
@@ -83,7 +84,6 @@ class klikDBS(Resource):
 
     def logout(self):
         try:
-            self.__driver.wait = WebDriverWait(self.__driver, 30)
             self.__driver.wait.until(
                 EC.frame_to_be_available_and_switch_to_it((By.NAME, "user_area")))
             logout = self.__driver.wait.until(EC.presence_of_element_located(
