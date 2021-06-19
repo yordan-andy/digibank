@@ -34,7 +34,7 @@ class klikDBS(Resource):
     __url = 'https://internet-banking.dbs.com.sg/'
 
     def get(self):
-        return "REST API DBS"
+        return 'REST API DBS'
 
     def post(self):
         username = request.form["username"]
