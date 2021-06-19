@@ -83,10 +83,10 @@ class klikDBS(Resource):
             'code': 200,
             'success': 'true',
             'message': 'data found',
-            'data': [{
+            'data': {
                 'balance': '%s' % saldo,
                 'timestamp': '%s' % datetime.datetime.now()
-            }]
+            }
         }))
 
     def logout(self):
