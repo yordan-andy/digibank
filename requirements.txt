@@ -19,7 +19,6 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 lxml==4.6.3
 MarkupSafe==1.1.1
-MechanicalSoup==1.1.0
 pycurl==7.43.0.5
 pytz==2020.1
 requests==2.25.1
