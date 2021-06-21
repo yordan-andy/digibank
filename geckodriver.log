@@ -105,8 +105,8 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
-1624280517085	geckodriver	INFO	Listening on 127.0.0.1:8206
-1624280520131	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofile76BApt"
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\yordan\AppData\Local\Temp\rust_mozprofile878kfm\bookmarkbackups\bookmarks-2021-06-21_11_y8NI03puq05JxmvJ6wKeIg==.jsonlz4) because it does not exist
+"C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofile76BApt"
 *** You are running in headless mode.
 1624280520607	Marionette	INFO	Marionette enabled
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofile76BApt\\search.json.mozlz4", (void 0)))
@@ -123,8 +123,8 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
-1624280555005	geckodriver	INFO	Listening on 127.0.0.1:5729
-1624280558065	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofiledVIsvS"
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\yordan\AppData\Local\Temp\rust_mozprofile76BApt\bookmarkbackups\bookmarks-2021-06-21_11_ubbd0A10z6+yY1DQH4MMqw==.jsonlz4) because it does not exist
+"C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofiledVIsvS"
 *** You are running in headless mode.
 1624280558563	Marionette	INFO	Marionette enabled
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofiledVIsvS\\search.json.mozlz4", (void 0)))
@@ -427,8 +427,8 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
-1624288880910	geckodriver	INFO	Listening on 127.0.0.1:1068
-1624288883948	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofilebg46t5"
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\yordan\AppData\Local\Temp\rust_mozprofile46os1F\bookmarkbackups\bookmarks-2021-06-21_11_sc7u7A+dYx1VEHvxn-1tpQ==.jsonlz4) because it does not exist
+"C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofilebg46t5"
 *** You are running in headless mode.
 1624288884481	Marionette	INFO	Marionette enabled
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofilebg46t5\\search.json.mozlz4", (void 0)))
@@ -450,8 +450,8 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
-1624289107573	geckodriver	INFO	Listening on 127.0.0.1:1172
-1624289110635	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofilekuhiVB"
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\yordan\AppData\Local\Temp\rust_mozprofilebg46t5\bookmarkbackups\bookmarks-2021-06-21_11_OwfFgZIlh5rI8HExk-N3KQ==.jsonlz4) because it does not exist
+"C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofilekuhiVB"
 *** You are running in headless mode.
 1624289111128	Marionette	INFO	Marionette enabled
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofilekuhiVB\\search.json.mozlz4", (void 0)))
@@ -486,6 +486,53 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 1624291334032	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\yordan\AppData\Local\Temp\rust_mozprofileTtXPG1\bookmarkbackups\bookmarks-2021-06-21_11_laGEJs7Xy+nGKYDQgH45Zg==.jsonlz4) because it does not exist
+1624310879835	geckodriver	INFO	Listening on 127.0.0.1:1129
+1624310882875	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofilepodfX0"
+*** You are running in headless mode.
+1624310883480	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofilepodfX0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9224/devtools/browser/b8b43411-f8a3-4537-ab72-ab7173c4366c
+1624310884955	Marionette	INFO	Listening on port 1138
+1624310885038	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js?version=100, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624310887920	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624311650914	geckodriver	INFO	Listening on 127.0.0.1:19585
+1624311653957	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileTSWq3s"
+*** You are running in headless mode.
+1624311654500	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileTSWq3s\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9224/devtools/browser/d736d571-9ce8-4f96-b8fe-b38e5dbb803c
+1624311656015	Marionette	INFO	Listening on port 19593
+1624311656117	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js?version=100, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624311659264	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js, line 70: unreachable code after return statement
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
