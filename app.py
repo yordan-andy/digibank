@@ -48,7 +48,11 @@ class klikDBS(Resource):
 
     def login(self):
         opts = Options()
-        opts.headless = True
+        # opts.headless = True
+        opts.add_argument('--headless')
+        opts.add_argument('--disable-gpu')
+        opts.add_argument('--no-sandbox')
+        opts.add_argument('--remote-debugging-port=9224')
         self.__driver = webdriver.Firefox(
             executable_path=GeckoDriverManager().install(), options=opts)
         self.__driver.wait = WebDriverWait(self.__driver, 5)
