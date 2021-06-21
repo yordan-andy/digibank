@@ -48,7 +48,7 @@ class klikDBS(Resource):
 
     def login(self):
         opts = Options()
-        opts.headless = True
+        opts.headless = False
         self.__driver = webdriver.Firefox(
             executable_path=GeckoDriverManager().install(), options=opts)
         self.__driver.wait = WebDriverWait(self.__driver, 5)
