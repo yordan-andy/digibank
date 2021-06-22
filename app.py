@@ -52,6 +52,7 @@ class klikDBS(Resource):
         opts.add_argument('--headless')
         opts.add_argument('--disable-gpu')
         opts.add_argument('--no-sandbox')
+        opts.add_argument('--disable-dev-shm-usage')
         self.__driver = webdriver.Chrome(
             executable_path=r'/app/.chromedriver/bin/chromedriver', options=opts)
         self.__driver.wait = WebDriverWait(self.__driver, 5)
