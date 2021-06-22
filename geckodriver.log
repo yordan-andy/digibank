@@ -730,3 +730,26 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 1624347071761	geckodriver	INFO	Listening on 127.0.0.1:1028
 1624347128425	geckodriver	INFO	Listening on 127.0.0.1:1027
 1624347167056	geckodriver	INFO	Listening on 127.0.0.1:1042
+1624347286343	geckodriver	INFO	Listening on 127.0.0.1:32020
+1624347289416	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileuYwbyF"
+*** You are running in headless mode.
+1624347290056	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileuYwbyF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9224/devtools/browser/f87bdd36-08a5-45f6-ac7e-b9cc0eb0f1a7
+1624347293099	Marionette	INFO	Listening on port 5345
+1624347293594	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js?version=100, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624347296250	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
