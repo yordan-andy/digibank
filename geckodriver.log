@@ -727,3 +727,6 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624347071761	geckodriver	INFO	Listening on 127.0.0.1:1028
+1624347128425	geckodriver	INFO	Listening on 127.0.0.1:1027
+1624347167056	geckodriver	INFO	Listening on 127.0.0.1:1042
