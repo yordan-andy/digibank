@@ -53,8 +53,9 @@ class klikDBS(Resource):
         opts.add_argument('--disable-gpu')
         opts.add_argument('--no-sandbox')
         opts.add_argument('--remote-debugging-port=9224')
+        opts.binary_location('/app/vendor/firefox')
         self.__driver = webdriver.Firefox(
-            executable_path='geckodriver', options=opts)
+            executable_path='/app/vendor/geckodriver', options=opts)
         self.__driver.wait = WebDriverWait(self.__driver, 5)
         self.__driver.get(self.__url)
 
