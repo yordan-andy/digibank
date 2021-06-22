@@ -8,8 +8,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.firefox.options import Options
-from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.utils import ChromeType
 
 import sys
 import logging
@@ -47,14 +47,13 @@ class klikDBS(Resource):
         return response
 
     def login(self):
-        opts = Options()
-        # opts.headless = True
+        opts = webdriver.ChromeOptions()
+        # opts.headless = False
         opts.add_argument('--headless')
         opts.add_argument('--disable-gpu')
         opts.add_argument('--no-sandbox')
-        opts.add_argument('--remote-debugging-port=9224')
-        self.__driver = webdriver.Firefox(
-            executable_path='/app/vendor/firefox/firefox', options=opts)
+        self.__driver = webdriver.Chrome(
+            executable_path=r'/app/.apt/usr/bin/google-chrome', options=opts)
         self.__driver.wait = WebDriverWait(self.__driver, 5)
         self.__driver.get(self.__url)
 
@@ -76,7 +75,7 @@ class klikDBS(Resource):
 
         self.__driver.wait = WebDriverWait(self.__driver, 30)
         saldo = self.__driver.wait.until(
-            EC.visibility_of_element_located((By.XPATH, "/html/body/section[1]/div/div/div/div[1]/div[2]/div/div/ul/li[2]/div[2]/table/tbody/tr/td[2]/span"))).text
+            EC.presence_of_element_located((By.XPATH, "//*[@id=\"notification\"]/ul/li[2]/div[2]/table/tbody/tr/td[2]/span"))).text
 
         self.__driver.switch_to.default_content()
         self.logout()
