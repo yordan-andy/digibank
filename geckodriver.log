@@ -680,3 +680,26 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624335102370	geckodriver	INFO	Listening on 127.0.0.1:20711
+1624335105431	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileeZIVnN"
+*** You are running in headless mode.
+1624335106214	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileeZIVnN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9224/devtools/browser/4852926e-e39a-49ff-8fc7-e39857cc4db7
+1624335108070	Marionette	INFO	Listening on port 20719
+1624335108121	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js?version=100, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1624335111966	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
