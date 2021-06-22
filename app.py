@@ -53,7 +53,7 @@ class klikDBS(Resource):
         opts.add_argument('--disable-gpu')
         opts.add_argument('--no-sandbox')
         self.__driver = webdriver.Chrome(
-            executable_path=r'/app/.apt/usr/bin/google-chrome', options=opts)
+            executable_path=r'/app/.chromedriver/bin/chromedriver', options=opts)
         self.__driver.wait = WebDriverWait(self.__driver, 5)
         self.__driver.get(self.__url)
 
