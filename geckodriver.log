@@ -634,7 +634,8 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
-1624329818565	geckodriver	INFO	Listening on 127.0.0.1:16561
+Exiting due to channel error.
+Listening on 127.0.0.1:16561
 1624329821650	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileruKzeK"
 *** You are running in headless mode.
 1624329822248	Marionette	INFO	Marionette enabled
@@ -680,8 +681,9 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
-1624335102370	geckodriver	INFO	Listening on 127.0.0.1:20711
-1624335105431	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileeZIVnN"
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\yordan\AppData\Local\Temp\rust_mozprofileSmjEe7\bookmarkbackups\bookmarks-2021-06-22_11_dBKQU-m1+D0dkfLNXFGf1Q==.jsonlz4) because it does not exist
+Exiting due to channel error.
+eground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileeZIVnN"
 *** You are running in headless mode.
 1624335106214	Marionette	INFO	Marionette enabled
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileeZIVnN\\search.json.mozlz4", (void 0)))
@@ -753,3 +755,70 @@ JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
 JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=253, line 5: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1625238498551	geckodriver	INFO	Listening on 127.0.0.1:1089
+1625238501593	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofiles8kPio"
+*** You are running in headless mode.
+1625238502999	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofiles8kPio\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9224/devtools/browser/d5d4fec5-69cd-4286-9a46-a94d917f35e5
+1625238504769	Marionette	INFO	Listening on port 1097
+1625238505301	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js?version=100, line 70: unreachable code after return statement
+1625238512748	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofiledh2ShB"
+*** You are running in headless mode.
+1625238656879	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofiledh2ShB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9224/devtools/browser/b54f5795-58af-439d-8a7e-7353009a180e
+1625238658436	Marionette	INFO	Listening on port 1073
+1625238658960	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js?version=100, line 70: unreachable code after return statement
+1625238668612	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+\firefox.exe" "--marionette" "--headless" "--disable-gpu" "--no-sandbox" "--remote-debugging-port=9224" "-foreground" "-no-remote" "-profile" "C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileHSgFUm"
+*** You are running in headless mode.
+1625238770827	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\yordan\\AppData\\Local\\Temp\\rust_mozprofileHSgFUm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9224/devtools/browser/55699be6-0ac6-41ec-aa1f-cd78d2e580fd
+1625238772300	Marionette	INFO	Listening on port 1071
+1625238772334	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js?version=100, line 70: unreachable code after return statement
+1625238783443	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1625238783443	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://internet-banking.dbs.com.sg/IB/dsss/js/EncryptionApplet.js, line 70: unreachable code after return statement
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://assets.adobedtm.com/7cb8109970d1/91e60302cf2a/launch-aeb39dae19a7.min.js?version=255, line 5: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.

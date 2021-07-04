@@ -69,6 +69,8 @@ class klikDBS(Resource):
         password.send_keys(self.__password)
         login.send_keys(webdriver.common.keys.Keys.SPACE)
 
+        print(self.__driver.page_source)
+
         self.__driver.wait.until(
             EC.frame_to_be_available_and_switch_to_it((By.NAME, "user_area")))
         self.__driver.wait.until(

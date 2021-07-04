@@ -76,7 +76,7 @@ class klikDBS(Resource):
 
         self.__driver.wait = WebDriverWait(self.__driver, 30)
         saldo = self.__driver.wait.until(
-            EC.presence_of_element_located((By.XPATH, "//*[@id=\"notification\"]/ul/li[2]/div[2]/table/tbody/tr/td[2]/span"))).text
+            EC.presence_of_element_located((By.XPATH, "//*[@id=\"detailBtn\"]/div[1]/span[2]"))).text
 
         self.__driver.switch_to.default_content()
         self.logout()

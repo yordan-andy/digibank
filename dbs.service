@@ -1,0 +1,22 @@
+
+[Unit]
+# Deskripsi service
+Description=Gunicorn instance to serve myproject
+# Memberitahu init system untuk start service ini jika network target terjangkau
+After=network.target
+
+[Service]
+# User linux yang digunakan
+User=yordan
+# Group ownership
+Group=nginx
+# Mapping working directory
+WorkingDirectory=/home/yordan/klikdbs
+# Environment path
+Environment="PATH=/home/yordan/klikdbs/dbs-env/bin"
+# Command untuk menjalankan service
+ExecStart=/usr/local/bin/gunicorn --preload --workers 3 --bind 0.0.0.0:8000 wsgi:app
+
+[Install]
+# Mulai service jika multiuser system sudah up dan running
+WantedBy=multi-user.target
